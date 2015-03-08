@@ -3,6 +3,11 @@ library(data.table)
 library(dplyr)
 library(datasets)
 
+# Read the household_power_consumption.txt file
+# merge the columns Date and Time with format
+# filter the data related to the days 2007/02/01 and 2007/02/02
+# return the data
+
 read_data <- function(){
   data <- read.table("household_power_consumption.txt", 
                      sep=";", header=T, stringsAsFactors=F, na.strings="?",
