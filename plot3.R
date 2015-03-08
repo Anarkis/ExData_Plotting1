@@ -9,7 +9,7 @@ data <- read_data()
 png("plot3.png", width=480, height=480)
 
 
-plot(data$Time,data$Sub_metering_1, type="l", ylab="Energy sub metering", col="black")
+plot(data$Time,data$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering", col="black")
 lines(data$Time, data$Sub_metering_2, col="red")
 lines(data$Time, data$Sub_metering_3, col="blue")
 
